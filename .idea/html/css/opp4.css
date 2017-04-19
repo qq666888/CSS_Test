@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;list-style: none}
+
+#box{
+    width: 200px;
+    height: 100px;
+    margin: 20 auto;
+}
+
+#box p{
+    height: 40px;
+
+}
+
+#box button{
+    margin-left: 10px;
+}

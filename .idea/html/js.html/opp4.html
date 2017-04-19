@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/opp4.css">
+</head>
+<body>
+<div id="box">
+    <p id="con"> </p>
+
+    <button id="btn1">开始</button>
+    <button id="btn2">暂停</button>
+</div>
+<script>
+    var arr=['小小','毛豆','哈哈','哇哦'];
+//    for(var i=0;i<arr.length;i++){
+//        console.log(arr[li]);
+//    }
+    var con=document.getElementById('con'),
+        btn1=document.getElementById('btn1'),
+        btn2=document.getElementById('btn2');
+
+    var  i=0;
+    function aa() {
+        con.innerHTML=arr[i];
+        i++;
+        if(i>arr.length-1){
+            i=0;
+        }
+
+
+    }
+    btn1.onclick=function () {
+        s1=setInterval(aa,100);
+        //setInterval(定时器）
+
+    }
+    btn2.onclick=function () {
+        clearInterval(s1);
+        //clearInterval 清除定时器
+
+
+    }
+</script>
+
+</body>
+</html>
