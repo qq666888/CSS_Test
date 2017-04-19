@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{width: 100px;
+            height: 100px;
+            background: green;
+         }
+
+    </style>
+     <!--输出的三种方式：1.alert 例如<button onabort="alert('你好')">点击</button>点击按钮后弹出你好-->
+    <!--2. console.log() 例如 获取表单form input button-->
+    <!--var cc=document.getElementsByTagName('input')[2].value;-->
+    <!--console.log(cc)-->
+    <!--3.prompr("请输入您的成绩")-->
+</head>
+<body>
+<!--<button onabort="alert('你好')">点击</button>//点击按钮后弹出你好-->
+<!--<div id="box">银行好几遍</div>-->
+<input type="text" value="好好" >
+<input type="text" value="一" >
+<input type="text" value="二" >
+<input type="text" value="三" >
+
+<!--<script src='index.js'></script>//script的引入方式-->
+
+<script>//另一种表达方式，直接写内容
+
+//    document.write('<h1>你好，js!</h1>')//document文档中写你好
+// alert('你好')//弹出
+    var box=document.getElementsByTagName('input');//getElementsByClassName通过获取元素名字
+         ;
+//         获取文本值
+   console.log(aaa.innerHTML="谢谢")//console查看，输出
+
+    box.style.color="red";
+    box.style.background="blue";
+<!--获取元素的几种方法-->
+//    document.getElementsById()
+//    document.getElementsByClassName()
+//    document.getElementssByTagName()
+
+//    获取 div  p  ul ol li dl  dt  dd a 文本值
+//1.用innerHTML
+//2.用innerText
+
+//    赋值
+//1.用innerHTML=''
+//2.用innerText=''
+
+    //获取表单form input button
+    var cc=document.getElementsByTagName('input')[2].value;
+    console.log(cc)
+
+
+
+
+</script>
+
+</body>
+</html>

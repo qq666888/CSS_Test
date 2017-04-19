@@ -1,0 +1,9 @@
+*{margin: 0; padding: 0}
+
+.tou{ height: 100px; width:420px;background: greenyellow;margin: 0 auto }
+.foot{height: 100px; width:420px;;background: yellow;margin: 0 auto }
+.shenzi{height: 150px;width:420px; background: aliceblue;margin: 0 auto }
+.left{height: 150px; width: 140px; background: tan; float: left}
+.center{height: 150px; width: 140px; background: palevioletred;float: left}
+.right{ height: 150px;width: 140px; background: paleturquoise;float: left}
+.clear{clear: both}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        [id]{
+            color: brown; height: 20px;
+        }
+        .big{
+            font-size: 45px;
+        }
+        [class~=test]{
+            text-decoration: underline; font-size: 20px;
+        }
+        [class|=big]{
+            text-decoration: underline; color: aqua;
+        }
+        [class^=big]{
+            text-decoration: underline; color: blue;
+
+        }
+        p::first-letter{
+            color: red;
+        }
+        p::first-line{
+            font-family: "monaco" ,monospace;
+        }
+        div::before{
+           content: url("http://img2.zxxk.com/2013-4/ZXXKCOM201304181419438134453.jpg")
+        }
+    </style>
+</head>
+<body>
+<h1>h1......</h1>
+<div><p>句块共和别人的加菲猫电弧焊接否一年回复还可以五人本句块共和别人的加菲猫电弧焊接否一年回复还可以五人本句块共和别人的加菲猫电弧焊接否一年回复还可以五人本
+</p></div>
+
+    <p>p2.....</p>
+<p id="p3" class="big test">p3....</p>
+<p id="p4" class="big">p4......</p>
+</body>
+</html>

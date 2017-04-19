@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/opp2.css">
+</head>
+<body>
+<div id="box">
+    <ul id="xinwen">
+        <li>新闻</li>
+        <li>图片</li>
+        <li>游戏</li>
+    </ul>
+    <div id="con">
+        <p>111111111111111营模式改变没见到欢乐斗牛挂号费你看好回访h
+            恩方便电话费简介覅偶办法发你哦黄飞鸿的电
+            hi一个败诉方脑服务</p>
+        <p>22222222222222222营模式改变没见到欢乐斗牛挂号费你看好回访h
+            恩方便电话费简介覅偶办法发你哦黄飞鸿的电
+            hi一个败诉方脑服务</p>
+        <p>33333333333333333营模式改变没见到欢乐斗牛挂号费你看好回访h
+            恩方便电话费简介覅偶办法发你哦黄飞鸿的电
+            hi一个败诉方脑服务</p>
+    </div>
+</div>
+<script>
+    var lis=document.getElementById('xinwen').getElementsByTagName('li'),
+        //新闻，图片。游戏
+        con=document.getElementById('con').getElementsByTagName('p');
+    //每段内容
+//    点击每个导航，让他们出现所对应的内容
+    for(var i=0;i<lis.length;i++){
+        lis[i].index=i;
+        //循环出每个li，添加点击事件
+        lis[i].onclick=function () {
+            //让所有的p隐藏
+
+            for(var j=0;j<con.length;j++){
+                con[j].style.display='none';
+                lis[j].style.background='';
+               // display='none'让所有图片隐藏
+                console.log(con[j]);
+            }
+            con[this.index].style.display='block';
+            //display='block'显示隐藏
+            //点击当前对象的索引
+            lis[this.index].style.background='red';
+
+        }
+
+    }
+</script>
+
+</body>
+</html>
