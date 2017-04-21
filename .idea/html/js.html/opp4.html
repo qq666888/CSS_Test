@@ -13,7 +13,10 @@
     <button id="btn2">暂停</button>
 </div>
 <script>
-    var arr=['小小','毛豆','哈哈','哇哦'];
+//    var arr=['小小','毛豆','哈哈','哇哦'];
+var arr=['<img src="../img/1.jpg">','<img src="../img/2.jpg">',
+    '<img src="../img/3.jpg">','<img src="../img/4.jpg">',
+'<img src="../img/b1.jpg">','<img src="../img/b2.jpg">'];
 //    for(var i=0;i<arr.length;i++){
 //        console.log(arr[li]);
 //    }
@@ -32,17 +35,19 @@
 
     }
     btn1.onclick=function () {
-        s1=setInterval(aa,100);
+        s1=setInterval(aa,500);
         //setInterval(定时器）
+        btn1.disabled='disabled';//禁止点击
 
     }
     btn2.onclick=function () {
         clearInterval(s1);
         //clearInterval 清除定时器
+        btn1.disabled='';//取消禁止点击
 
 
     }
-</script>
+    </script>
 
 </body>
 </html>

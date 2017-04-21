@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/opp6.css">
+</head>
+<body>
+<div id="box">
+    <ul id="con">
+        <li ><img src="../img/shui.jpg"/></li>
+        <li ><img src="../img/tian.jpg"/></li>
+        <li ><img src="../img/cai.jpg"/></li>
+
+
+    </ul>
+
+</div>
+<div id="bix1">
+    <button id="btn1">开始</button>
+    <button id="btn2">暂停</button>
+</div>
+<script>
+    var con=document.getElementById('box1'),
+        btn1=document.getElementById('btn1'),
+        btn2=document.getElementById('btn2');
+
+    var con=document.getElementById('con');
+    var cleft;
+    btn1.onclick=function () {
+        s1=setInterval(auto,2);
+        btn1.disabled='disabled';
+    }
+    btn2.onclick=function () {
+        clearInterval(s1);
+        btn1.disabled='';
+    }
+    function auto() {
+        //获取ul的marginleft
+        cleft=parseInt(con.style.marginLeft);
+        if(!cleft){
+            cleft=0;
+        }
+        if(cleft>-1200){
+
+            con.style.marginLeft=cleft-1+'px';
+        }else {
+            con.style.marginLeft=0;
+        }
+
+    }
+//    setInterval(auto,2);
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

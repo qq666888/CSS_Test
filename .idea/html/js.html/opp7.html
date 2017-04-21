@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/opp7.css">
+</head>
+<body>
+<div id="box">
+    <ul id="imgs">
+        <li><img src="http://img1.3lian.com/img13/c3/39/d/61.jpg"/> </li>
+        <li><img src="http://pica.nipic.com/2008-01-09/200819115558772_2.jpg"/> </li>
+        <li><img src="http://img2.3lian.com/2014/f2/164/d/17.jpg"/> </li>
+        <li><img src="http://www.mjjq.com/pic/20061202/20061202020326400.jpg"/> </li>
+        <li><img src="http://img3.3lian.com/2014/s5/38/d/92.jpg"/> </li>
+        <li><img src="http://pic2.ooopic.com/11/79/98/31bOOOPICb1_1024.jpg"/> </li>
+        <li><img src="http://img6.faloo.com/Picture/0x0/0/957/957515.jpg" /></li>
+        <li><img src="http://pic.58pic.com/58pic/13/08/67/39W58PIC4pd_1024.jpg"/> </li>
+        <li><img src="http://img3.3lian.com/2013/c4/80/d/11.jpg"/> </li>
+        <li><img src="http://img.article.pchome.net/00/26/98/56/pic_lib/wm/zjjbz2_17.jpg"/> </li>
+    </ul>
+    <ol id="num">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+
+    </ol>
+</div>
+<span id="left"> < </span>
+<span id="right"> > </span>
+<script>
+var left=document.getElementById("left"),
+    right=document.getElementById("right"),
+    imgs=document.getElementById('imgs').getElementsByTagName('li'),
+    nums=document.getElementById('num').getElementsByTagName('li');
+var k=0;
+function auto() {
+    for(var i=0;i<imgs.length;i++){
+        imgs[i].style.display='none';
+        nums[i].style.background='none';
+    }
+    imgs[k].style.display='block';
+    nums[k].style.background='red';
+    k++;
+    if(k>nums.length-1){
+        k=0;
+    }
+
+}
+s1=setInterval(auto ,800);
+    for(var i=0;i<nums.length;i++){
+        nums[i].index=i;
+
+        nums[i].onmouseover=function () {
+            //onmouseover鼠标滑过
+            //onmouseover鼠标离开
+
+                clearInterval(s1);
+
+            for(var j=0;j<imgs.length;j++){
+                imgs[j].style.display='none';
+                // display='none'让所有图片隐藏
+                nums[j].style.background='none';
+            }
+            nums[this.index].style.background='red';
+            imgs[this.index].style.display='block';
+
+
+
+
+        }
+        nums[i].onmouseout=function () {
+            k=this.index;
+            s1=setInterval(auto ,800);
+
+        }
+    }
+</script>
+
+</body>
+</html>

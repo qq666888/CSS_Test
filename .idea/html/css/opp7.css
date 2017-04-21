@@ -1,0 +1,37 @@
+*{margin: 0;padding: 0;list-style: none}
+
+
+#box{
+    width: 700px;
+    height: 320px;
+    margin: 40px auto;
+    border: 1 solid red;
+    position: relative;
+
+    /*//相对定位，相对于自身上下左右移动定位，占用原来空间，*/
+/*元素的位置与文档流有关*/
+    overflow: hidden;
+}
+#box ul li{float: left;}
+#num{
+    width: 200px;
+    height: 20px;
+
+    position: absolute;
+    /*//绝对定位，不占用空间，相对于父盒子*/
+    right: 40px;
+    bottom: 20px;
+
+
+}
+#num li{
+    width: 18px;
+    height: 18px;
+    border:1 solid #ccc;
+    float: left;
+    color: #fff;
+    text-align: center;
+    /*line-height: 18px;*/
+    border-radius: 2px;
+
+}

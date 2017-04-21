@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/opp5.css">
+</head>
+<body>
+<div id="box">
+    <ul id="tab">
+        <li>凉菜</li>
+        <li>甜品</li>
+        <li>水果</li>
+        <li>汽水</li>
+    </ul>
+    <div id="con">
+        <p><img src="../img/cai.jpg"/></p>
+        <p><img src="../img/tian.jpg"/></p>
+        <p><img src="../img/ggggg.jpg"/></p>
+        <p><img src="../img/shui.jpg"/></p>
+    </div>
+</div>
+
+<script>
+    var lis=document.getElementById('tab').getElementsByTagName('li'),
+
+        con=document.getElementById('con').getElementsByTagName('p');
+
+    for(var i=0;i<lis.length;i++){
+        lis[i].index=i;
+
+        lis[i].onclick=function () {
+
+
+            for(var j=0;j<con.length;j++){
+                con[j].style.display='none';
+                lis[j].style.background='';
+
+
+//                console.log(con[j]);
+            }
+            con[this.index].style.display='block';
+
+            lis[this.index].style.background='red';
+
+        }
+
+    }
+</script>
+
+</body>
+</html>
