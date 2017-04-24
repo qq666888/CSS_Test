@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/opp8.css">
+</head>
+<body>
+<div id="box">
+   <ul id="imgs">
+       <li><img src="../img/shui.jpg"/>
+           <p>急死胡歌北海市开了房佛山和方法呢</p></li>
+       <li><img src="../img/tian.jpg"/>
+           <p>急死胡歌北海市开了房佛山和方法呢</p></li>
+       <li><img src="../img/cai.jpg"/>
+           <p>急死胡歌北海市开了房佛山和方法呢</p></li>
+       <li><img src="../img/ggggg.jpg"/>
+           <p>急死胡歌北海市开了房佛山和方法呢</p></li>
+
+   </ul>
+</div>
+<script>
+    var lis=document.getElementById('imgs').getElementsByTagName('li');
+    for(var i=0;i<lis.length;i++){
+
+    lis[i].onmouseover=function () {
+       this.style.border='2px solid red';
+    this.getElementsByTagName('p')[0].style.display='block';
+    }
+        lis[i].onmouseout=function () {
+            this.style.border='2px solid #ccc';
+            this.getElementsByTagName('p')[0].style.display='none';
+    }
+
+
+
+
+    }
+</script>
+</body>
+</html>
