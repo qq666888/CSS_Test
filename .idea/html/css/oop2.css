@@ -1,0 +1,32 @@
+*{margin: 0;padding: 0;list-style: none}
+
+#box{
+    width: 2400px;
+    height: 600px;
+    margin: 40px auto;
+    position: absolute;
+    -webkit-animation:a 10s linear 2s infinite  ;
+    /*谷歌的浏览器内核定义动画名字。时间。速度曲线.延时。播放次数.动画方向*/
+    /*匀速linear*/
+    /*由慢到快再到慢ease*/
+    /*由慢开始ease-in*/
+    /*由慢结束ease-out*/
+    /*由慢开始，由慢结束ease-in-out
+    播放次数n infinite
+    动画方向normal*/
+
+}
+@-webkit-keyframes a {
+    0%{
+        left: 0;
+    }
+    25%{
+        left: -300px;
+    }
+    50%{
+        left: -600px;
+    }
+    75%{
+        left: -1200px;
+    }
+}

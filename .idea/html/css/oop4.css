@@ -1,0 +1,24 @@
+*{margin: 0;padding: 0;list-style: none}
+
+#box{
+    width: 200px;
+    height: 200px;
+    background: red;
+    opacity: 0.2;
+    border: 1px solid red;
+    margin: 90px auto;
+    -webkit-transition:all 0.5s ;
+    -webkit-transform: rotate(0deg);
+
+}
+
+#box:hover{
+    /*hover:徘徊；盘旋;一个模仿悬停事件(鼠标移动到一个对象上面及移出这个对象)的方法*/
+    width: 200px;
+    height: 200px;
+    background: lawngreen;
+    opacity: 1;
+    border: 80px solid lightgreen;
+    -webkit-transform: rotate(300deg);
+
+}
