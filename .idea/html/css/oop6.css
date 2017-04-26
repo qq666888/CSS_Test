@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.square {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background: #ff3399;
+    margin: 50px auto;
+    -webkit-transform: rotate(45deg);
+    -webkit-transition: all 1s;
+}
+.square:hover {
+    -webkit-transform: rotate(720deg);
+}
+.square p {
+    line-height: 200px;
+    text-align: center;
+    font-size: 170px;
+    color: yellow;
+    -webkit-transform: rotate(135deg);
+    -webkit-transition: all 0.5s;
+}
+
+.square p:hover {
+    -webkit-transform: rotate(1440deg);
+}
